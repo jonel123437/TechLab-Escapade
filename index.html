@@ -6,6 +6,7 @@
         <title>TechLab Escapade</title>
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/termsAndCondition.css">
+        <link rel="stylesheet" href="assets/css/gradeFourContent.css">
     </head>
 
     <body>
@@ -24,15 +25,35 @@
         <div id="dashboard" style="display: none;">
             <h1>TechLab Escapade</h1>
             <div class="dashboard__container">
-                <button>Play</button>
+                <button onclick="displayGrade()">Play</button>
                 <button>Save Progress</button>
             </div>
         </div>
 
-        <div>
-            <button>Grade 4</button>
-            <button>Grade 5</button>
-            <button>Grade 6</button>
+        <div id="grade__selection" style="display: none;">
+            <button onclick="displayFour()">Grade 4</button>
+            <button onclick="displayFive()">Grade 5</button>
+            <button onclick="displaySix()">Grade 6</button>
+        </div>
+
+        <button id="gradeFour" style="display: none;" onclick="displayFourContent()">Grade 4</button>
+        <button id="gradeFive" style="display: none;">Grade 5</button>
+        <button id="gradeSix" style="display: none;">Grade 6</button>
+
+        <div id="gradeFourContent" style="display: none;">
+            <h1>GRADE 4</h1>
+            <div class="contenFourContainer1">
+                <div>
+                    <h2>Level 1: <i>BASIC FUNCTIONS OF THE COMPUTER OPERATIONS</i></h2>
+                    <img src="" alt="">
+                </div>
+                <br>
+                <div class="contenFourContainer">
+                    <h2>MECHANICS & RULES</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quisquam dolorem exercitationem vero, non aut officia unde optio eaque totam ad laudantium maiores aliquid tempora delectus amet, odit assumenda ullam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quia quam mollitia architecto inventore doloribus vitae commodi deserunt tempore, molestiae qui maiores expedita est tempora consequatur. Molestias nulla fugit modi?</p>
+                </div>
+            </div>
         </div>
     </body>
 
