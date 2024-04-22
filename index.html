@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TechLab Escapade</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/termsAndCondition.css">
+    </head>
+
+    <body>
+        <h1 id="hero__title" onclick="displayTermsAndCondition()" style="cursor: pointer;">TechLab Escapade</h1>
+
+        <div id="termsAndCondition" style="display: none;">
+            <h1>IMPORTANT!</h1>
+            <p class="terms__description">Please take a moment to read our Terms of Use and Privacy Policy. Tap  OK to accept them and proceed to the game.</p>
+            <div class="termsContainer">
+                <button>TERMS OF USE</button>
+                <button>PRIVACY POLICY</button>
+                <button onclick="displayDashboard()">OK</button>
+            </div>
+        </div>
+
+        <div id="dashboard" style="display: none;">
+            <h1>TechLab Escapade</h1>
+            <div class="dashboard__container">
+                <button>Play</button>
+                <button>Save Progress</button>
+            </div>
+        </div>
+
+        <div>
+            <button>Grade 4</button>
+            <button>Grade 5</button>
+            <button>Grade 6</button>
+        </div>
+    </body>
+
+    <script src="assets/js/termsAndCondition.js"></script>
+</html>

@@ -1,0 +1,22 @@
+#termsAndCondition {
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 30rem;
+}
+
+.terms__description {
+    font-size: 2rem;
+}
+
+.termsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
