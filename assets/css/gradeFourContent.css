@@ -1,4 +1,5 @@
-#gradeFourContent {
+#gradeFourContent,
+#gradeFourContentlvl2 {
     text-align: center;
     max-width: 52rem;
 }
@@ -11,7 +12,8 @@
     text-align: left;
 }
 
-#gradeFour {
+#gradeFour,
+#gradeFourlvl2 {
     font-size: 100px;
 }
 
@@ -59,7 +61,13 @@
 #gradeFourQuiz2, 
 #gradeFourQuiz3,
 #gradeFourQuiz4,
-#gradeFourQuiz5 {
+#gradeFourQuiz5,
+#gradeFourQuiz6,
+#gradeFourQuiz7,
+#inventory,
+#findHardware,
+#explainMouse,
+.tunga {
     background-color: gray;
     padding: 30px 20px;
     border-radius: 1rem;
@@ -84,7 +92,9 @@
 .quiz2Input, 
 .quiz3Input,
 .quiz4Input,
-.quiz5Input {
+.quiz5Input,
+.quiz6Input,
+.quiz7Input {
     margin-top: 2rem;
     height: 5rem;
     border-radius: 50px;
@@ -99,7 +109,9 @@
 .quiz2Button, 
 .quiz3Button,
 .quiz4Button,
-.quiz5Button {
+.quiz5Button,
+.quiz6Button,
+.quiz7Button {
     margin-top: 2rem;
 }
 
@@ -107,7 +119,9 @@
 #quiz2Answer, 
 #quiz3Answer,
 #quiz4Answer,
-#quiz5Answer {
+#quiz5Answer,
+#quiz6Answer,
+#quiz7Answer {
     width: 45.5rem;
     height: 24rem;
     padding: 30px 20px;
@@ -120,7 +134,9 @@
 #quiz2Answer div, 
 #quiz3Answer div,
 #quiz4Answer div,
-#quiz5Answer div {
+#quiz5Answer div,
+#quiz6Answer div,
+#quiz7Answer div  {
     text-align: center;
 }
 
@@ -128,7 +144,9 @@
 #quiz2Mouse, 
 #quiz3Mouse,
 #quiz4Mouse,
-#quiz5Mouse {
+#quiz5Mouse,
+#quiz6Mouse,
+#quiz7Mouse {
     background-color: white;
     width: 12rem;
     padding: 10px;
@@ -151,7 +169,9 @@
 #quiz2Answer__2, 
 #quiz3Answer__2,
 #quiz4Answer__2,
-#quiz5Answer__2 {
+#quiz5Answer__2,
+#quiz6Answer__2,
+#quiz7Answer__2 {
     background-color: gray;
     width: 45.5rem;
     height: 24rem;
@@ -162,4 +182,54 @@
 
 #hakdog {
     margin-top: 2rem;
+}
+
+#findHardware button {
+    margin-top: 10rem;
+}
+
+.classroom__img {
+    width: 70rem;
+}
+
+#hahahah {
+    position: absolute;
+    left: 29rem;
+    top: 19rem;
+    width: 5rem;
+}
+
+#explainMouse {
+    text-align: center;
+}
+
+#lalaasd {
+    margin-top: 5rem;
+}
+
+.explainMouseContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.explainMouseContainer h2,
+.baba {
+    background-color: white;
+    padding: 10px;
+    width: 10rem;
+    border: 5px solid gold;
+    border-radius: 1rem;
+}
+
+.ghfgh {
+    display: flex;
+    align-items: center;
+}
+
+.ghfgh p {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
 }

@@ -34,7 +34,7 @@
             <button onclick="displayGradeFourLevels()">GRADE 4</button>
             <button onclick="displayFive()">GRADE 5</button>
             <button onclick="displaySix()">GRADE 6</button>
-        </div>
+        </div> 
 
         <div id="gradeFourLevels" style="display: none;">
             <h1>GRADE 4:</h1>
@@ -42,25 +42,26 @@
                 <img class="level1__img level" src="assets/img/level1.png" alt="">
                 <p>Basic Functions of the <br>Computer Operations</p>
             </div>
-            <div class="level__container">
-                <img class="level1__img level" src="assets/img/level1.png" alt="">
+            <div class="level__container" onclick="displayGradeFourlvl2()">
+                <img class="level2__img level" src="assets/img/level1.png" alt="">
                 <p>Understanding the Parts of the <br>Computer System</p>
             </div>
-            <div class="level__container">
-                <img class="level1__img level" src="assets/img/level1.png" alt="">
+            <div class="level__container" onclick="displayGradeFour()">
+                <img class="level3__img level" src="assets/img/level1.png" alt="">
                 <p>Introduction to Word Processing <br>Software</p>
             </div>
-            <div class="level__container">
-                <img class="level1__img level" src="assets/img/level1.png" alt="">
+            <div class="level__container" onclick="displayGradeFour()">
+                <img class="level4__img level" src="assets/img/level1.png" alt="">
                 <p>Back Internet Safety and Responsible Use</p>
             </div>
         </div>
 
         <button id="gradeFour" style="display: none;" onclick="displayGradeFourContent()">GRADE <br>4</button>
+        <button id="gradeFourlvl2" style="display: none;" onclick="displayGradeFourContentlvl2()">GRADE <br>4</button>
         <button id="gradeFive" style="display: none;">GRADE 5</button>
         <button id="gradeSix" style="display: none;">GRADE 6</button>
 
-        <div id="gradeFourContent" style="display: none;" onclick="displayGradeFourLevel1Content()">
+        <div id="gradeFourContent" style="display: none;" onclick="displayGradeFourQuiz1()">
             <h1>GRADE 4</h1>
             <div class="contenFourContainer1">
                 <div class="level1__container">
@@ -74,17 +75,51 @@
             </div>
         </div> 
 
-        <div id="gradeFourLevel1Content" style="display: none;">
-            <div class="grid-container">
-                <button onclick="displayGradeFourQuiz1()">Basic <br>Computer <br>Operation</button>
-                <button>Understanding <br>the parts of a <br>computer <br>system</button>
+        <div id="gradeFourContentlvl2" style="display: none;" onclick="displayFindHardware()">
+            <h1>GRADE 4</h1>
+            <div class="contenFourContainer1">
+                <div class="level1__container">
+                    <h2>Level 2: <i>UNDERSTANDING THE PARTS OF THE COMPUTER SYSTEM</i></h2>
+                    <img class="level" src="assets/img/level1.png" alt="">
+                </div>
+                <div class="contenFourContainer">
+                    <h2>MECHANICS & RULES</h2>
+                    <p class="contentFour_description">In this game, students will learn about the difference parts of a computer system and how they work together. They wil explore the computer equipment in a classroom setup, click the equipment icon, and a mouse will appear</p>
+                </div>
             </div>
-            <div class="grid-container">
-                <button>Introduction <br>to word <br>processing <br>software</button>
-                <button>Basic internet <br>safety and <br>Responsible <br>use</button>
+        </div> 
+
+        <div id="findHardware" style="display: none;">
+            <h1>Find the hardware parts of <br>the computer.</h1>
+            <button onclick="displayClassroom()">START</button>
+        </div>
+
+        <div id="classroom" style="display: none;">
+            <img class="classroom__img" src="assets/img/classroom.avif" alt="">
+            <img onclick="displayExplainMouse()" id="hahahah" src="assets/img/laptop.png" alt="">
+        </div>
+
+        <div id="explainMouse" style="display: none;" onclick="displayLeftAndRight()">
+            <img id="lalaasd" class="mouse__img" src="assets/img/jerry.jpg" alt="">
+            <div class="explainMouseContainer">
+                <h2>LEFT <br>CLICK</h2>
+                <h2>RIGHT <br>CLICK</h2>
             </div>
         </div>
 
+        <div id="leftClick" class="tunga" style="display: none;" onclick="displayLeftAndRight()">
+            <img class="mouse__img" id="lalaasd" src="assets/img/mousegif.gif" alt="">
+            <div class="ghfgh">
+                <h2 class="baba">LEFT <br>CLICK</h2>
+                <p>open files or programs, select and highlight, and drag-and-drop</p>
+            </div>
+        </div>
+
+        <div id="rightClick" class="tunga" style="display: none;">
+            <img class="mouse__img" id="lalaasd" src="assets/img/2_60b0979d-c57c-4ffd-bf57-6baf28f4bbd0_1024x.webp" alt="">
+            <h2 class="baba">RIGHT <br>CLICK</h2>
+            <p></p>
+        </div>
 
         <div id="gradeFourQuiz1" style="display: none;">
             <div class="gradeFourQuiz1Picture">
@@ -190,9 +225,62 @@
                 <img class="mouse__img" src="assets/img/a4tech_bh300_wireless_headset.jpg" alt="">
             </div>
         </div>
-        <div id="quiz5Answer__2" onclick="" style="display: none;">
+        <div id="quiz5Answer__2" onclick="haha3()" style="display: none;">
             <img class="mouse__img" id="hakdog" src="assets/img/a4tech_bh300_wireless_headset.jpg" alt="">
             <p id="monitor__description">a piece of equipment worn on the <br>head that allows someone to hear <br>sound when using a phone, music, <br>or computer system. </p>
+        </div>
+
+
+        <div id="gradeFourQuiz6" style="display: none;">
+            <div class="gradeFourQuiz4Picture">
+                <img class="mouse__img" src="assets/img/AUESPEP4PASSIVESPEAKERBLACK5_1000x1000.webp" alt="">
+                <img class="mouse__img" src="assets/img/AUESPEP4PASSIVESPEAKERBLACK5_1000x1000.webp" alt="">
+            </div>
+            <input class="quiz6Input" type="text">
+            <br>
+            <button class="quiz6Button">Enter</button>
+        </div>
+        <div id="quiz6Answer" onclick="displayQuiz6Answer2()" style="display: none;">
+            <h1 id="quiz6Mouse">SPEAKER</h1>
+            <div>
+                <img class="mouse__img" src="assets/img/AUESPEP4PASSIVESPEAKERBLACK5_1000x1000.webp" alt="">
+            </div>
+        </div>
+        <div id="quiz6Answer__2" onclick="haha4()" style="display: none;">
+            <img class="mouse__img" id="hakdog" src="assets/img/AUESPEP4PASSIVESPEAKERBLACK5_1000x1000.webp" alt="">
+            <p id="monitor__description">standard output devices used with <br>computer systems that enable the <br>listener to listen to a sound as <br>an outcome.</p>
+        </div>
+
+
+        <div id="gradeFourQuiz7" style="display: none;">
+            <div class="gradeFourQuiz4Picture">
+                <img class="mouse__img" src="assets/img/2_60b0979d-c57c-4ffd-bf57-6baf28f4bbd0_1024x.webp" alt="">
+                <img class="mouse__img" src="assets/img/2_60b0979d-c57c-4ffd-bf57-6baf28f4bbd0_1024x.webp" alt="">
+            </div>
+            <input class="quiz7Input" type="text">
+            <br>
+            <button class="quiz7Button">Enter</button>
+        </div>
+        <div id="quiz7Answer" onclick="displayQuiz7Answer2()" style="display: none;">
+            <h1 id="quiz7Mouse">PRINTER</h1>
+            <div>
+                <img class="mouse__img" src="assets/img/2_60b0979d-c57c-4ffd-bf57-6baf28f4bbd0_1024x.webp" alt="">
+            </div>
+        </div>
+
+        <div id="quiz7Answer__2" onclick="haha5()" style="display: none;">
+            <img class="mouse__img" id="hakdog" src="assets/img/2_60b0979d-c57c-4ffd-bf57-6baf28f4bbd0_1024x.webp" alt="">
+            <p id="monitor__description">a device that accepts text and <br>graphic output from a computer <br>and transfers the information to <br>paper</p>
+        </div>
+
+        <div id="inventory" style="display: none;">
+            <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
+            <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
+            <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
+            <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
+            <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
+            <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
+            <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
         </div>
 
     </body>
