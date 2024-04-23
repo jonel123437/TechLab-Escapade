@@ -11,6 +11,7 @@ function displayTermsAndCondition() {
 function displayDashboard() {
     termsAndCondition.style.display = "none";
     dashboard.style.display = "block";
+    inventory.style.display = "none"
 }
 
 function displayGrade() {
