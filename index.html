@@ -25,37 +25,177 @@
         <div id="dashboard" style="display: none;">
             <h1>TechLab Escapade</h1>
             <div class="dashboard__container">
-                <button onclick="displayGrade()">Play</button>
-                <button>Save Progress</button>
+                <button onclick="displayGrade()">PLAY</button>
+                <button>SAVE PROGRESS</button>
             </div>
         </div>
 
         <div id="grade__selection" style="display: none;">
-            <button onclick="displayFour()">Grade 4</button>
-            <button onclick="displayFive()">Grade 5</button>
-            <button onclick="displaySix()">Grade 6</button>
+            <button onclick="displayGradeFourLevels()">GRADE 4</button>
+            <button onclick="displayFive()">GRADE 5</button>
+            <button onclick="displaySix()">GRADE 6</button>
         </div>
 
-        <button id="gradeFour" style="display: none;" onclick="displayFourContent()">Grade 4</button>
-        <button id="gradeFive" style="display: none;">Grade 5</button>
-        <button id="gradeSix" style="display: none;">Grade 6</button>
-
-        <div id="gradeFourContent" style="display: none;">
-            <h1>GRADE 4</h1>
-            <div class="contenFourContainer1">
-                <div>
-                    <h2>Level 1: <i>BASIC FUNCTIONS OF THE COMPUTER OPERATIONS</i></h2>
-                    <img src="" alt="">
-                </div>
-                <br>
-                <div class="contenFourContainer">
-                    <h2>MECHANICS & RULES</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quisquam dolorem exercitationem vero, non aut officia unde optio eaque totam ad laudantium maiores aliquid tempora delectus amet, odit assumenda ullam.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quia quam mollitia architecto inventore doloribus vitae commodi deserunt tempore, molestiae qui maiores expedita est tempora consequatur. Molestias nulla fugit modi?</p>
-                </div>
+        <div id="gradeFourLevels" style="display: none;">
+            <h1>GRADE 4:</h1>
+            <div class="level__container" onclick="displayGradeFour()">
+                <img class="level1__img level" src="assets/img/level1.png" alt="">
+                <p>Basic Functions of the <br>Computer Operations</p>
+            </div>
+            <div class="level__container">
+                <img class="level1__img level" src="assets/img/level1.png" alt="">
+                <p>Understanding the Parts of the <br>Computer System</p>
+            </div>
+            <div class="level__container">
+                <img class="level1__img level" src="assets/img/level1.png" alt="">
+                <p>Introduction to Word Processing <br>Software</p>
+            </div>
+            <div class="level__container">
+                <img class="level1__img level" src="assets/img/level1.png" alt="">
+                <p>Back Internet Safety and Responsible Use</p>
             </div>
         </div>
-    </body>
 
+        <button id="gradeFour" style="display: none;" onclick="displayGradeFourContent()">GRADE <br>4</button>
+        <button id="gradeFive" style="display: none;">GRADE 5</button>
+        <button id="gradeSix" style="display: none;">GRADE 6</button>
+
+        <div id="gradeFourContent" style="display: none;" onclick="displayGradeFourLevel1Content()">
+            <h1>GRADE 4</h1>
+            <div class="contenFourContainer1">
+                <div class="level1__container">
+                    <h2>Level 1: <i>BASIC FUNCTIONS OF THE COMPUTER OPERATIONS</i></h2>
+                    <img class="level" src="assets/img/level1.png" alt="">
+                </div>
+                <div class="contenFourContainer">
+                    <h2>MECHANICS & RULES</h2>
+                    <p class="contentFour_description">Players are given only 12 seconds to answer each "4 Pics 1 Word" related to the topic "BASIC FUNCTIONS OF THE COMPUTER OPERATIONS". They must analyze the images and quickly deduce the word that connects them. <br><br>The objective is to correctly guess the word that relates to the four images provided. Each player starts with 3 lives. A life is lost for each incorrect guess or if the time limit elapses without providing an answer. Once all lives are lost, the game ends.</p>
+                </div>
+            </div>
+        </div> 
+
+        <div id="gradeFourLevel1Content" style="display: none;">
+            <div class="grid-container">
+                <button onclick="displayGradeFourQuiz1()">Basic <br>Computer <br>Operation</button>
+                <button>Understanding <br>the parts of a <br>computer <br>system</button>
+            </div>
+            <div class="grid-container">
+                <button>Introduction <br>to word <br>processing <br>software</button>
+                <button>Basic internet <br>safety and <br>Responsible <br>use</button>
+            </div>
+        </div>
+
+
+        <div id="gradeFourQuiz1" style="display: none;">
+            <div class="gradeFourQuiz1Picture">
+                <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
+                <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
+                <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
+                <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
+            </div>
+            <input class="quiz1Input" type="text">
+            <br>
+            <button class="quiz1Button">Enter</button>
+        </div>
+        <div id="quiz1Answer" onclick="displayQuiz1Answer2()" style="display: none;">
+            <h1 id="quiz1Mouse">MOUSE</h1>
+            <div>
+                <img class="mouse__img" src="assets/img/jerry.jpg" alt="">
+            </div>
+        </div>
+        <div id="quiz1Answer__2" style="display: none;" onclick="displayGradeFourQuiz2()">
+            <img class="mouse__img" id="hakdog" src="assets/img/jerry.jpg" alt="">
+            <p id="mouse__description">to move the cursor on the screen, <br>select objects and click on <br>buttons</p>
+        </div>
+
+
+        <div id="gradeFourQuiz2" style="display: none;">
+            <div class="gradeFourQuiz1Picture">
+                <img class="mouse__img" src="assets/img/keyboard.jpg" alt="">
+                <img class="mouse__img" src="assets/img/keyboard.jpg" alt="">
+                <img class="mouse__img" src="assets/img/keyboard.jpg" alt="">
+                <img class="mouse__img" src="assets/img/keyboard.jpg" alt="">
+            </div>
+            <input class="quiz2Input" type="text">
+            <br>
+            <button class="quiz2Button">Enter</button>
+        </div>
+        <div id="quiz2Answer" onclick="displayQuiz2Answer2()" style="display: none;">
+            <h1 id="quiz2Mouse">KEYBOARD</h1>
+            <div>
+                <img class="mouse__img" src="assets/img/keyboard.jpg" alt="">
+            </div>
+        </div>
+        <div id="quiz2Answer__2" onclick="haha()" style="display: none;">
+            <img class="mouse__img" id="hakdog" src="assets/img/keyboard.jpg" alt="">
+            <p id="keyboard__description">device comprising an <br>arrangement of buttons or <br>keys used to input text in <br>computers</p>
+        </div>
+
+        
+        <div id="gradeFourQuiz3" style="display: none;">
+            <div class="gradeFourQuiz3Picture">
+                <img class="mouse__img" src="assets/img/monitor.avif" alt="">
+                <img class="mouse__img" src="assets/img/monitor.avif" alt="">
+                <img class="mouse__img" src="assets/img/monitor.avif" alt="">
+            </div>
+            <input class="quiz3Input" type="text">
+            <br>
+            <button class="quiz3Button">Enter</button>
+        </div>
+        <div id="quiz3Answer" onclick="displayQuiz3Answer2()" style="display: none;">
+            <h1 id="quiz3Mouse">MONITOR</h1>
+            <div>
+                <img class="mouse__img" src="assets/img/monitor.avif" alt="">
+            </div>
+        </div>
+        <div id="quiz3Answer__2" onclick="haha1()" style="display: none;">
+            <img class="mouse__img" id="hakdog" src="assets/img/monitor.avif" alt="">
+            <p id="monitor__description">an output device that displays <br>information in pictorial or <br>textual form</p>
+        </div>
+
+
+        <div id="gradeFourQuiz4" style="display: none;">
+            <div class="gradeFourQuiz4Picture">
+                <img class="mouse__img" src="assets/img/computersystemtower.png" alt="">
+                <img class="mouse__img" src="assets/img/computersystemtower.png" alt="">
+                <img class="mouse__img" src="assets/img/computersystemtower.png" alt="">
+            </div>
+            <input class="quiz4Input" type="text">
+            <br>
+            <button class="quiz4Button">Enter</button>
+        </div>
+        <div id="quiz4Answer" onclick="displayQuiz4Answer2()" style="display: none;">
+            <h1 id="quiz4Mouse">P.C.U</h1>
+            <div>
+                <img class="mouse__img" src="assets/img/computersystemtower.png" alt="">
+            </div>
+        </div>
+        <div id="quiz4Answer__2" onclick="haha2()" style="display: none;">
+            <img class="mouse__img" id="hakdog" src="assets/img/computersystemtower.png" alt="">
+            <p id="monitor__description">is the primary component of a <br>computer that acts as its <br>“control center.”</p>
+        </div>
+
+        <div id="gradeFourQuiz5" style="display: none;">
+            <div class="gradeFourQuiz4Picture">
+                <img class="mouse__img" src="assets/img/a4tech_bh300_wireless_headset.jpg" alt="">
+                <img class="mouse__img" src="assets/img/a4tech_bh300_wireless_headset.jpg" alt="">
+            </div>
+            <input class="quiz5Input" type="text">
+            <br>
+            <button class="quiz5Button">Enter</button>
+        </div>
+        <div id="quiz5Answer" onclick="displayQuiz5Answer2()" style="display: none;">
+            <h1 id="quiz5Mouse">HEADSET</h1>
+            <div>
+                <img class="mouse__img" src="assets/img/a4tech_bh300_wireless_headset.jpg" alt="">
+            </div>
+        </div>
+        <div id="quiz5Answer__2" onclick="" style="display: none;">
+            <img class="mouse__img" id="hakdog" src="assets/img/a4tech_bh300_wireless_headset.jpg" alt="">
+            <p id="monitor__description">a piece of equipment worn on the <br>head that allows someone to hear <br>sound when using a phone, music, <br>or computer system. </p>
+        </div>
+
+    </body>
     <script src="assets/js/termsAndCondition.js"></script>
+    <script src="assets/js/gradeFourContent.js"></script>
 </html>

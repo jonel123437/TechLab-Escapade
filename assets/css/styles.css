@@ -1,3 +1,7 @@
+:root {
+    --neon: #01FFF4;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -14,5 +18,10 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border: 5px solid skyblue;
+    border: 5px solid var(--neon);
+}
+
+.level {
+    height: 80px;
+    width: 80px;
 }

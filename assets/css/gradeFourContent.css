@@ -1,5 +1,6 @@
 #gradeFourContent {
     text-align: center;
+    max-width: 52rem;
 }
 
 .contenFourContainer {
@@ -8,4 +9,157 @@
 
 .contenFourContainer1 {
     text-align: left;
+}
+
+#gradeFour {
+    font-size: 100px;
+}
+
+.contentFour_description {
+    font-size: 25px;
+}
+
+.level__container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.level__container p {
+    border: 5px solid #01FFF4;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.level1__container {
+    display: flex;
+    gap: 30px;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-container button {
+    font-size: 30px;
+    width: 15rem;
+}
+
+#gradeFourLevel1Content {
+    width: 40rem;
+    height: 30rem;
+}
+
+#gradeFourLevel1Content .grid-container:nth-child(2) {
+    margin-top: 8rem;
+}
+#gradeFourQuiz1, 
+#gradeFourQuiz2, 
+#gradeFourQuiz3,
+#gradeFourQuiz4,
+#gradeFourQuiz5 {
+    background-color: gray;
+    padding: 30px 20px;
+    border-radius: 1rem;
+    text-align: center;
+    width: 45.5rem;
+    height: 24rem;
+}
+
+.gradeFourQuiz1Picture {
+    display: flex;
+}
+
+.mouse__img {
+    height: 10rem;
+    width: 10rem;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.quiz1Input, 
+.quiz2Input, 
+.quiz3Input,
+.quiz4Input,
+.quiz5Input {
+    margin-top: 2rem;
+    height: 5rem;
+    border-radius: 50px;
+    border: none;
+    width: 25rem;
+    font-size: 3.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.quiz1Button, 
+.quiz2Button, 
+.quiz3Button,
+.quiz4Button,
+.quiz5Button {
+    margin-top: 2rem;
+}
+
+#quiz1Answer, 
+#quiz2Answer, 
+#quiz3Answer,
+#quiz4Answer,
+#quiz5Answer {
+    width: 45.5rem;
+    height: 24rem;
+    padding: 30px 20px;
+    background-color: gray;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#quiz1Answer div, 
+#quiz2Answer div, 
+#quiz3Answer div,
+#quiz4Answer div,
+#quiz5Answer div {
+    text-align: center;
+}
+
+#quiz1Mouse, 
+#quiz2Mouse, 
+#quiz3Mouse,
+#quiz4Mouse,
+#quiz5Mouse {
+    background-color: white;
+    width: 12rem;
+    padding: 10px;
+    margin-top: -10px;
+    border-radius: 50px;
+}
+
+#mouse__description, 
+#keyboard__description, 
+#monitor__description {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50px;
+    width: 30rem;
+    font-size: 25px;
+    margin-left: 7rem;
+}
+
+#quiz1Answer__2, 
+#quiz2Answer__2, 
+#quiz3Answer__2,
+#quiz4Answer__2,
+#quiz5Answer__2 {
+    background-color: gray;
+    width: 45.5rem;
+    height: 24rem;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+#hakdog {
+    margin-top: 2rem;
 }
